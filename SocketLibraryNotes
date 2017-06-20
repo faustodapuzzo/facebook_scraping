@@ -24,3 +24,29 @@ mysock.connect( ('www.py4inf.com', 80) )
     FTP (21):    File Transfer
     """
 
+""" Uniform Resource Locator (URL): 
+    protocol: host/ document
+    https://www.youtube.com/watch?v=x2GILq59rl....
+    
+    Request Responce Cycle:
+    When you click on a link, you can see the URL
+    the browser creates a socket connection, makes a request, 
+    for example on port 80,
+    the next web page is the response.
+    
+    The browser is also in charge of displaying the (e.g. HTML) code 
+    """
+    
+"""You could do the same thing using the command telnet at the command line:
+    telnet www.dr-chuck.com 80
+    GET http://www.dr-chuck.com/page1.htm HTTP/1.0
+    
+    You need an empty line, and you would get back a response, with a header, and the HTML code.
+    It's very simple because it's not protected... HTTPS is not that easy.
+    
+    Actually when you load a full page this cycle happens many times! To retrieve different parts (HTML; CSS; ...)
+    like 20 requests.. that is why it takes time to load a page sometimes... 
+    """
+    
+
+
